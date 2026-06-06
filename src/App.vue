@@ -99,6 +99,21 @@ onMounted(async () => {
         <div class="skill-grid">
           <article v-for="(skill, index) in skills" :key="skill.title" class="skill-card reveal">
             <span class="skill-number">0{{ index + 1 }}</span>
+            <div class="skill-visual" :class="`skill-visual-${index + 1}`" aria-hidden="true">
+              <template v-if="index === 0">
+                <span class="chart-line" />
+                <i v-for="point in 5" :key="point" />
+              </template>
+              <template v-else-if="index === 1">
+                <span class="network-core">AI</span>
+                <i v-for="node in 5" :key="node" />
+              </template>
+              <template v-else>
+                <span class="stack-layer layer-one" />
+                <span class="stack-layer layer-two" />
+                <span class="stack-layer layer-three" />
+              </template>
+            </div>
             <h3>{{ skill.title }}</h3>
             <p>{{ skill.text }}</p>
             <div class="tag-list"><span v-for="tool in skill.tools" :key="tool">{{ tool }}</span></div>
