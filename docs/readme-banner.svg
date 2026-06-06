@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">Ting Personal Site</title>
+  <desc id="desc">A dark technology themed banner for Ting's developer portfolio.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080b0e"/>
+      <stop offset="0.55" stop-color="#0b1517"/>
+      <stop offset="1" stop-color="#07110d"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="70%" cy="42%" r="52%">
+      <stop stop-color="#88f7be" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#88f7be" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#fff" stroke-opacity=".055"/>
+    </pattern>
+    <filter id="soft">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="520" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="520" rx="18" fill="url(#grid)"/>
+  <rect width="1200" height="520" rx="18" fill="url(#glow)"/>
+  <path d="M0 2h370" stroke="#88f7be" stroke-width="3"/>
+  <path d="M830 518h370" stroke="#88f7be" stroke-width="3"/>
+
+  <g transform="translate(78 72)">
+    <rect width="50" height="50" rx="14" fill="none" stroke="#88f7be" stroke-opacity=".65"/>
+    <path d="m22 15-10 10 10 10M28 15l10 10-10 10" fill="none" stroke="#88f7be" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="68" y="34" fill="#f2f5f3" font-size="24" font-family="Consolas, monospace">Ting</text>
+  </g>
+
+  <g transform="translate(78 185)">
+    <text fill="#f2f5f3" font-size="69" font-weight="600" font-family="Arial, sans-serif" letter-spacing="-3">用代码探索</text>
+    <text y="78" fill="#88f7be" font-size="69" font-weight="600" font-family="Arial, sans-serif" letter-spacing="-3">数据与智能</text>
+    <text y="132" fill="#929b98" font-size="18" font-family="Arial, sans-serif">Python Development · AI Agent · RAG · Data Analysis</text>
+    <g transform="translate(0 174)">
+      <rect width="132" height="38" rx="4" fill="#88f7be"/>
+      <text x="66" y="25" text-anchor="middle" fill="#071b12" font-size="13" font-weight="700" font-family="Arial, sans-serif">PERSONAL SITE</text>
+      <rect x="144" width="108" height="38" rx="4" fill="none" stroke="#fff" stroke-opacity=".22"/>
+      <text x="198" y="25" text-anchor="middle" fill="#cbd2cf" font-size="13" font-family="Arial, sans-serif">VUE 3 + VITE</text>
+    </g>
+  </g>
+
+  <g transform="translate(760 82)">
+    <rect width="345" height="350" fill="#091114" fill-opacity=".68" stroke="#fff" stroke-opacity=".2"/>
+    <path d="M0 44h345M0 302h345" stroke="#fff" stroke-opacity=".12"/>
+    <text x="18" y="27" fill="#78827e" font-size="9" font-family="Consolas, monospace">PROFILE.SYS</text>
+    <circle cx="316" cy="23" r="3" fill="#88f7be"/>
+    <text x="325" y="27" fill="#88f7be" font-size="8" font-family="Consolas, monospace">LIVE</text>
+    <g fill="#68726e" font-size="8" font-family="Consolas, monospace">
+      <text x="18" y="70">01  focus</text>
+      <text x="18" y="94">02  building</text>
+      <text x="18" y="118">03  workflow</text>
+    </g>
+    <g fill="#d4dbd8" font-size="8" font-family="Consolas, monospace" text-anchor="end">
+      <text x="326" y="70">Python / AI</text>
+      <text x="326" y="94">Agent + RAG</text>
+      <text x="326" y="118">Data → Insight</text>
+    </g>
+    <g transform="translate(173 218)" fill="none" stroke="#88f7be">
+      <ellipse rx="86" ry="48" opacity=".24" transform="rotate(-14)"/>
+      <ellipse rx="78" ry="42" opacity=".17" transform="rotate(62)"/>
+      <circle r="31" fill="#88f7be" fill-opacity=".04" stroke-opacity=".55"/>
+      <circle cx="68" cy="-22" r="4" fill="#88f7be" stroke="none"/>
+      <circle cx="-42" cy="50" r="3" fill="#88f7be" stroke="none"/>
+      <text y="5" text-anchor="middle" fill="#88f7be" stroke="none" font-size="14" font-family="Consolas, monospace">AI</text>
+    </g>
+    <text x="18" y="327" fill="#78827e" font-size="8" font-family="Consolas, monospace">STATUS: READY</text>
+    <text x="326" y="327" text-anchor="end" fill="#78827e" font-size="8" font-family="Consolas, monospace">CN / 2026</text>
+  </g>
+
+  <rect x="1" y="1" width="1198" height="518" rx="17" fill="none" stroke="#fff" stroke-opacity=".08"/>
+</svg>

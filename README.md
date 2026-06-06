@@ -1,79 +1,127 @@
-# 程序员个人介绍网站
+<div align="center">
 
-个人介绍网站，用于展示个人信息、技术能力、项目经历、实习经历和联系方式。
+# Ting · 程序员个人介绍网站
 
-项目使用 `Vue3 + TypeScript + Vite + CSS` 构建，为纯前端单页静态网站，可直接部署到 Vercel。
+### 用代码探索数据与智能
 
-## 页面模块
+[![在线访问](https://img.shields.io/badge/在线访问-Personal_Site-88f7be?style=for-the-badge&logo=vercel&logoColor=071b12)](https://personal-site-rose-alpha-40.vercel.app/)
+[![GitHub](https://img.shields.io/badge/GitHub-greenhand886-181717?style=for-the-badge&logo=github)](https://github.com/greenhand886)
+[![Vue 3](https://img.shields.io/badge/Vue.js-3-42b883?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
+[![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
-- 首页介绍与求职方向
-- 关于我
-- 技术能力
-- 项目经历
-- 实习经历
-- 联系方式与邮箱点击复制
+<br />
 
-## 本地运行
+![Ting Personal Site](docs/readme-banner.svg)
+
+<br />
+
+**一个面向求职展示的深色科技风个人网站，呈现个人信息、技术能力、项目经历与实习经验。**
+
+[在线体验](https://personal-site-rose-alpha-40.vercel.app/) ·
+[项目仓库](https://github.com/greenhand886/personal-site) ·
+[联系邮箱](mailto:1786024918@qq.com)
+
+</div>
+
+---
+
+## ✨ 项目亮点
+
+| 🎨 深色科技风 | 📱 响应式设计 | 🧩 内容组件化 | ⚡ 轻量稳定 |
+| --- | --- | --- | --- |
+| 数据实验室视觉语言与细腻交互 | 适配桌面端与移动端浏览 | 个人信息与项目数据集中管理 | 纯前端静态站点，快速加载部署 |
+
+- 单页滚动式布局，清晰呈现求职方向与个人能力
+- 项目卡片直达三个对应的 GitHub 项目仓库
+- 导航平滑滚动、阅读进度、卡片与标签 Hover 效果
+- 联系邮箱支持点击复制，并提供清晰反馈
+- 支持 `prefers-reduced-motion`，兼顾无障碍体验
+
+## 🧭 页面模块
+
+```text
+首页介绍 → 关于我 → 技术能力 → 项目经历 → 实习经历 → 联系方式
+```
+
+## 🛠️ 技术栈
+
+| 分类 | 使用技术 |
+| --- | --- |
+| 前端框架 | Vue 3、TypeScript |
+| 构建工具 | Vite |
+| 样式实现 | CSS、响应式布局、CSS Animation |
+| 代码托管 | GitHub |
+| 部署平台 | Vercel |
+| AI 辅助 | Codex、ChatGPT、frontend-design skill |
+
+## 🚀 核心项目
+
+| 项目 | 简介 | 技术栈 |
+| --- | --- | --- |
+| [高校学生成绩分析与智能预警系统](https://github.com/greenhand886/student_warning_project) | 基于学生成绩数据构建随机森林预测模型，支持学业风险分析与预警 | Python、Flask、Scikit-learn、Random Forest |
+| [Job Agent 简历匹配与优化系统](https://github.com/greenhand886/job-agent-mvp) | 使用大模型能力实现简历解析、JD 分析、匹配评估与优化建议 | Python、Streamlit、LLM API、Prompt Engineering |
+| [RAG 企业知识库问答系统](https://github.com/greenhand886/EnterpriseQAsys) | 实践文档管理、文本切分、向量检索与问答生成流程 | Flask、Vue 3、MySQL、RAG、向量检索 |
+
+## 📂 项目结构
+
+```text
+personal-site/
+├─ docs/
+│  └─ readme-banner.svg
+├─ src/
+│  ├─ components/
+│  │  ├─ ProjectCard.vue
+│  │  ├─ SectionHeading.vue
+│  │  └─ SiteHeader.vue
+│  ├─ data/
+│  │  └─ portfolio.ts
+│  ├─ App.vue
+│  ├─ main.ts
+│  └─ styles.css
+├─ index.html
+├─ package.json
+└─ vite.config.ts
+```
+
+## 💻 本地运行
 
 ```bash
+git clone https://github.com/greenhand886/personal-site.git
+cd personal-site
 npm install
 npm run dev
 ```
 
-打开终端中显示的本地地址，通常是 `http://localhost:5173`。
+打开终端显示的地址，通常为 `http://localhost:5173`。
 
-## 修改个人信息
-
-主要内容集中在 `src/data/portfolio.ts`：
-
-- 个人姓名、简介、邮箱和社交链接
-- 项目经历
-- 技能列表
-- 实习经历
-
-页面结构位于 `src/App.vue`，整体视觉样式位于 `src/styles.css`。
-
-## AI 使用说明
-
-本项目在需求拆解、页面设计、Vue3 代码实现、交互功能编写、问题排查和 README 整理过程中使用了 Codex 与 ChatGPT。详细说明见 `AI使用说明.md`。
-
-## 构建
+## 📦 构建与预览
 
 ```bash
 npm run build
-```
-
-构建产物会生成在 `dist` 目录。可以通过以下命令预览：
-
-```bash
 npm run preview
 ```
 
-## 部署到 Vercel
+生产构建产物会生成在 `dist` 目录。
 
-1. 将项目推送到 GitHub、GitLab 或 Bitbucket。
-2. 登录 Vercel，点击 **Add New Project** 并导入仓库。
-3. Vercel 会自动识别 Vite，构建命令使用 `npm run build`，输出目录使用 `dist`。
-4. 点击 **Deploy**。
+## 🌐 部署
 
-也可以安装 Vercel CLI 后在项目目录运行：
+本项目已部署至 Vercel：
 
-```bash
-npm i -g vercel
-vercel
-```
+### [personal-site-rose-alpha-40.vercel.app](https://personal-site-rose-alpha-40.vercel.app/)
 
-## 项目结构
+在 Vercel 中导入仓库后，使用以下配置即可部署：
 
 ```text
-src/
-├─ components/
-│  ├─ ProjectCard.vue
-│  ├─ SectionHeading.vue
-│  └─ SiteHeader.vue
-├─ data/
-│  └─ portfolio.ts
-├─ App.vue
-├─ main.ts
-└─ styles.css
+Framework Preset: Vite
+Build Command: npm run build
+Output Directory: dist
+Install Command: npm install
 ```
+
+---
+
+<div align="center">
+
+Built with Vue 3, Vite and a little curiosity.
+
+</div>
