@@ -24,7 +24,7 @@ export const projects = [
     result: "支持风险查看、成绩分析、信息维护、重新预测与留言管理",
     tags: ["Python", "Flask", "Scikit-learn", "Random Forest", "HTML", "CSS"],
     color: "mint",
-    link: "https://github.com/greenhand886",
+    link: "https://github.com/greenhand886/student_warning_project",
   },
   {
     number: "02",
@@ -34,7 +34,7 @@ export const projects = [
     result: "探索 AI Agent 在实际求职工具中的应用",
     tags: ["Python", "Streamlit", "LLM API", "Prompt Engineering"],
     color: "blue",
-    link: "https://github.com/greenhand886",
+    link: "https://github.com/greenhand886/job-agent-mvp",
   },
   {
     number: "03",
@@ -44,7 +44,7 @@ export const projects = [
     result: "理解并实践 RAG 系统的整体开发流程",
     tags: ["Flask", "Vue3", "MySQL", "RAG", "向量检索"],
     color: "orange",
-    link: "https://github.com/greenhand886",
+    link: "https://github.com/greenhand886/EnterpriseQAsys",
   },
 ];
 

@@ -199,8 +199,8 @@ nav a:hover {
   grid-template-columns: minmax(0, 1fr) 340px;
   gap: 70px;
   align-items: center;
-  padding-top: 130px;
-  padding-bottom: 70px;
+  padding-top: 100px;
+  padding-bottom: 40px;
 }
 
 .hero-content {
@@ -540,18 +540,40 @@ h1 em,
   font-size: 16px;
 }
 
-.about-layout,
+.experience {
+  padding-top: 80px;
+}
+
 .experience-layout {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 90px;
+  display: block;
+}
+
+.experience-layout .section-heading {
+  max-width: 920px;
+  margin-bottom: 58px;
+}
+
+.about-layout {
+  display: block;
+}
+
+.about {
+  padding-top: 160px;
+}
+
+.about-layout .section-heading {
+  max-width: 920px;
+  margin-bottom: 58px;
 }
 
 .about-copy {
-  padding-top: 38px;
+  display: block;
+  max-width: 760px;
+  padding-top: 0;
 }
 
 .about-copy .lead {
+  margin-bottom: 22px;
   color: var(--text);
   font-size: 23px;
   line-height: 1.65;
@@ -588,6 +610,7 @@ h1 em,
 }
 
 .projects {
+  padding-top: 40px;
   background: var(--bg-soft);
 }
 
@@ -1051,9 +1074,7 @@ h1 em,
 }
 
 .experience-layout .section-heading {
-  position: sticky;
-  top: 140px;
-  align-self: start;
+  position: static;
 }
 
 .period,
@@ -1073,8 +1094,8 @@ h1 em,
 }
 
 .internship-card {
-  align-self: start;
-  margin-top: 25px;
+  max-width: 920px;
+  margin-top: 0;
   padding: 34px;
   border: 1px solid var(--line);
   background:
@@ -1128,6 +1149,8 @@ h1 em,
 .contact {
   position: relative;
   overflow: hidden;
+  padding-top: 200px;
+  padding-bottom: 210px;
   text-align: center;
 }
 
@@ -1410,6 +1433,10 @@ footer {
     padding: 90px 0;
   }
 
+  .about {
+    padding-top: 56px;
+  }
+
   .section-heading {
     margin-bottom: 42px;
   }
@@ -1418,6 +1445,14 @@ footer {
   .experience-layout {
     grid-template-columns: 1fr;
     gap: 0;
+  }
+
+  .about-copy {
+    display: block;
+  }
+
+  .about-copy .lead {
+    margin-bottom: 18px;
   }
 
   .about-copy {

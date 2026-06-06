@@ -44,7 +44,7 @@ onMounted(async () => {
         <div class="hero-content">
           <div class="availability reveal"><span />{{ profile.availability }}</div>
           <p class="hero-kicker reveal">Hello, I am {{ profile.name }}</p>
-          <h1 class="reveal">用代码探索<br /><em>数据与智能。</em></h1>
+          <h1 class="reveal">用代码探索<br /><em>数据与智能</em></h1>
           <p class="hero-copy reveal">{{ profile.intro }}</p>
           <div class="hero-actions reveal">
             <a class="button button-primary" href="#projects">
@@ -80,7 +80,7 @@ onMounted(async () => {
 
     <section id="about" class="about section">
       <div class="container about-layout">
-        <SectionHeading eyebrow="01 / About" title="持续学习，也持续把想法做成项目。" />
+        <SectionHeading eyebrow="01 / About" title="持续学习，也持续把想法做成项目" />
         <div class="about-copy reveal">
           <p class="lead">我是一名数据科学与大数据技术专业学生，求职方向聚焦 Python、AI 与 Web 系统开发。</p>
           <p>
@@ -95,7 +95,7 @@ onMounted(async () => {
 
     <section id="skills" class="skills section">
       <div class="container">
-        <SectionHeading eyebrow="02 / Capabilities" title="技术能力与学习方向。" text="从数据处理、机器学习，到 AI 应用与 Web 系统开发。" />
+        <SectionHeading eyebrow="02 / Capabilities" title="技术能力与学习方向" text="从数据处理、机器学习，到 AI 应用与 Web 系统开发。" />
         <div class="skill-grid">
           <article v-for="(skill, index) in skills" :key="skill.title" class="skill-card reveal">
             <span class="skill-number">0{{ index + 1 }}</span>
@@ -124,14 +124,14 @@ onMounted(async () => {
 
     <section id="projects" class="projects section">
       <div class="container">
-        <SectionHeading eyebrow="03 / Selected Work" title="在项目中理解技术。" text="三个围绕数据分析、AI Agent 与 RAG 的实践项目。" />
+        <SectionHeading eyebrow="03 / Selected Work" title="在项目中理解技术" text="三个围绕数据分析、AI Agent 与 RAG 的实践项目。" />
         <div class="project-grid"><ProjectCard v-for="project in projects" :key="project.number" v-bind="project" /></div>
       </div>
     </section>
 
     <section id="experience" class="experience section">
       <div class="container experience-layout">
-        <SectionHeading eyebrow="04 / Internship" title="在真实业务里，积累数据实践经验。" />
+        <SectionHeading eyebrow="04 / Internship" title="在真实业务里，积累数据实践经验" />
         <article class="internship-card reveal">
           <div class="internship-heading">
             <span class="period">DATA ANALYSIS</span>
