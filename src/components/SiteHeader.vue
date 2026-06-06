@@ -35,7 +35,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
           <rect x="1" y="1" width="38" height="38" rx="12" />
           <path d="m17 13-7 7 7 7M23 13l7 7-7 7" />
         </svg>
-        <span>KT<span class="accent">.</span></span>
+        <span>Ting</span>
       </a>
 
       <button
