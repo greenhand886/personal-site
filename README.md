@@ -3,17 +3,18 @@
 # Ting · 程序员个人介绍网站
 
 ### 用代码探索数据与智能
+<br />
+
+![Ting Personal Site](docs/readme-banner.svg)
+
+<br />
+
 
 [![在线访问](https://img.shields.io/badge/在线访问-Personal_Site-88f7be?style=for-the-badge&logo=vercel&logoColor=071b12)](https://personal-site-rose-alpha-40.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-greenhand886-181717?style=for-the-badge&logo=github)](https://github.com/greenhand886)
 [![Vue 3](https://img.shields.io/badge/Vue.js-3-42b883?style=for-the-badge&logo=vuedotjs&logoColor=white)](https://vuejs.org/)
 [![Vercel](https://img.shields.io/badge/Deployed_on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
-<br />
-
-![Ting Personal Site](docs/readme-banner.svg)
-
-<br />
 
 **一个面向求职展示的深色科技风个人网站，呈现个人信息、技术能力、项目经历与实习经验。**
 
