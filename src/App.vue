@@ -41,20 +41,39 @@ onMounted(async () => {
       <div class="hero-grid" aria-hidden="true" />
       <div class="hero-glow" aria-hidden="true" />
       <div class="container hero-inner">
-        <div class="availability reveal"><span />{{ profile.availability }}</div>
-        <p class="hero-kicker reveal">Hello, I am {{ profile.name }}</p>
-        <h1 class="reveal">用代码探索<br /><em>数据与智能。</em></h1>
-        <p class="hero-copy reveal">{{ profile.intro }}</p>
-        <div class="hero-actions reveal">
-          <a class="button button-primary" href="#projects">
-            查看我的项目
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
-          </a>
-          <a class="text-link" :href="profile.github" target="_blank" rel="noreferrer">
-            查看 GitHub
-            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
-          </a>
+        <div class="hero-content">
+          <div class="availability reveal"><span />{{ profile.availability }}</div>
+          <p class="hero-kicker reveal">Hello, I am {{ profile.name }}</p>
+          <h1 class="reveal">用代码探索<br /><em>数据与智能。</em></h1>
+          <p class="hero-copy reveal">{{ profile.intro }}</p>
+          <div class="hero-actions reveal">
+            <a class="button button-primary" href="#projects">
+              查看我的项目
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="m7 10 5 5 5-5" /></svg>
+            </a>
+            <a class="text-link" :href="profile.github" target="_blank" rel="noreferrer">
+              查看 GitHub
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9" /></svg>
+            </a>
+          </div>
         </div>
+        <aside class="hero-console reveal" aria-label="个人技术方向概览">
+          <div class="console-head">
+            <span>PROFILE.SYS</span>
+            <span class="console-live"><i /> LIVE</span>
+          </div>
+          <div class="console-body">
+            <p><span>01</span><code>focus</code><strong>Python / AI</strong></p>
+            <p><span>02</span><code>building</code><strong>Agent + RAG</strong></p>
+            <p><span>03</span><code>workflow</code><strong>Data → Insight</strong></p>
+          </div>
+          <div class="console-orbit" aria-hidden="true">
+            <span class="orbit-ring ring-one" /><span class="orbit-ring ring-two" />
+            <span class="orbit-core">AI</span>
+            <i class="orbit-node node-one" /><i class="orbit-node node-two" /><i class="orbit-node node-three" />
+          </div>
+          <div class="console-foot"><span>STATUS: READY</span><span>CN / 2026</span></div>
+        </aside>
         <div class="hero-meta reveal"><span>{{ profile.role }}</span><span>{{ profile.location }}</span></div>
       </div>
     </section>

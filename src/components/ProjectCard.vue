@@ -1,5 +1,7 @@
 <script setup lang="ts">
-defineProps<{
+import { computed } from "vue";
+
+const props = defineProps<{
   number: string;
   title: string;
   description: string;
@@ -8,6 +10,15 @@ defineProps<{
   color: string;
   link: string;
 }>();
+
+const visualData = computed(() => {
+  const variants = {
+    mint: { label: "MODEL.PIPELINE", value: "RF.V1", bars: [62, 84, 72, 92, 78] },
+    blue: { label: "RESUME.WORKFLOW", value: "AGENT", bars: [44, 68, 88, 76, 94] },
+    orange: { label: "VECTOR.SEARCH", value: "RAG", bars: [78, 54, 92, 64, 82] },
+  };
+  return variants[props.color as keyof typeof variants] ?? variants.mint;
+});
 </script>
 
 <template>
@@ -22,10 +33,21 @@ defineProps<{
     </div>
     <div class="project-visual" aria-hidden="true">
       <span class="visual-dot" />
-      <div class="visual-window">
+      <span class="visual-axis axis-x" />
+      <span class="visual-axis axis-y" />
+      <div class="visual-window" :class="`visual-${color}`">
         <div class="visual-bar"><i /><i /><i /></div>
-        <div class="visual-content"><span /><span /><span /></div>
+        <div class="visual-dashboard">
+          <div class="visual-metric">
+            <small>{{ visualData.label }}</small>
+            <strong>{{ visualData.value }}</strong>
+          </div>
+          <div class="visual-chart">
+            <i v-for="height in visualData.bars" :key="height" :style="{ height: `${height}%` }" />
+          </div>
+        </div>
       </div>
+      <span class="visual-caption">PROJECT / {{ number }}</span>
     </div>
     <h3>{{ title }}</h3>
     <p>{{ description }}</p>

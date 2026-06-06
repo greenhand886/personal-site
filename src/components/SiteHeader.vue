@@ -3,6 +3,7 @@ import { onMounted, onUnmounted, ref } from "vue";
 
 const open = ref(false);
 const scrolled = ref(false);
+const progress = ref(0);
 
 const links = [
   { label: "关于", href: "#about" },
@@ -13,6 +14,8 @@ const links = [
 
 const onScroll = () => {
   scrolled.value = window.scrollY > 24;
+  const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+  progress.value = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
 };
 
 onMounted(() => {
@@ -25,6 +28,7 @@ onUnmounted(() => window.removeEventListener("scroll", onScroll));
 
 <template>
   <header class="site-header" :class="{ 'is-scrolled': scrolled }">
+    <span class="scroll-progress" :style="{ width: `${progress}%` }" aria-hidden="true" />
     <div class="header-inner">
       <a class="logo" href="#top" aria-label="返回首页">
         <svg viewBox="0 0 40 40" width="40" height="40" aria-hidden="true">
